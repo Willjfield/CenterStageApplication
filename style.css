@@ -175,6 +175,12 @@ a.dark:active {
 	border:5px solid gray; 
 }
 
+.invIcons{
+	cursor: none;
+	margin:20px;
+	width:700px;
+}
+
 #padded{	
 	padding-left:150px;
 	padding-right:150px;
