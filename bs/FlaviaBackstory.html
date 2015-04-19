@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flavia - Gladiatrix/Slave</title>
+    <link type="text/css" rel="stylesheet" href="../style.css">
+    <script src="../scripts/jquery-2.1.3.min.js"></script>
+  </head>
+  <div class = "fullScreenDiv">
+  <body class = "Grey">
+    <p class="centeredHor" id="padded">
+
+    <div id = "p1" class = "bottomText">
+    Flavia was born into slavery. She worked for a corrupt senator in Rome and never knew her parents. Flavia often wished to be sold because she believed that anyone else would be a better master than the senator. She may even be able to earn her freedom if she worked for someone else.
+    </div>
+
+    <div id = "p2" class = "bottomText">
+    Flavia finally was sold. But, she was sold to one of the most ill-reputed gladiator managers in the city. Many of her first fights were at wild parties that aristocrats threw. They didn't make her fight male gladiators but instead found it amusing to have her fight groups of children and wild animals.
+    </div>
+
+    <div id = "p3" class = "bottomText">
+    She hated what her life had become but fought as hard as she could because she knew that if she started losing fights, she would be worthless to the manager and might be put to even more degrading work.
+    </div>
+
+    </p>
+    <a id = "selector" class = "dark" href="../StyleMenu.html"><div class="button" id="lowerRight"> Select </div></a>
+    <a class = "dark" href="../FighterMenu.html"><div class="button" id="lowerLeft"> Back </div></a>
+  </body>
+</div>
+      <script>
+      $("#p2").hide();
+      $("#p3").hide();
+
+      $( "#p1" ).on("click",function() {
+        $("#p1").hide();
+        $("#p2").show();
+        $("#p3").hide();
+      });
+
+      $( "#p2" ).on("click",function() {
+        $("#p1").hide();
+        $("#p2").hide();
+        $("#p3").show();
+      });
+
+      $( "#selector" ).on("click",function() {
+        sessionStorage.fighter = "flavia";
+      });
+
+    </script>
+</html>

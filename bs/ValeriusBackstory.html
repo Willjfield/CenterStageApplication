@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Valerius - Urban Poor</title>
+    <link type="text/css" rel="stylesheet" href="../style.css">
+    <script src="../scripts/jquery-2.1.3.min.js"></script>
+  </head>
+  <div class = "fullScreenDiv">
+  <body class = "Grey">
+	<p class="centeredHor" id="padded">
+	<div id = "p1" class = "bottomText">
+	Valerius didn't know much about his family but he knew that he was descended from a Germanic tribe called the Marcomanni. The Marcomanni lost to Julius Caeser's army in Gaul and were captured as slaves. That’s how Valerius’s parents told him they ended up in the Roman city of Nimes. 
+	</div>
+	<div id = "p2" class = "bottomText">
+	Valerius’s father had been a talented blacksmith whose master paid him for his work and eventually allowed him to buy his own freedom. Valerius felt lucky to grow up as a Roman citizen. However, he knew at every moment that he was of low status. He had no access to formal education and never learned how to read. 
+	</div>
+	<div id = "p3" class = "bottomText">
+	Valerius grew up near the amphitheater and got a job assisting gladiators in their training. He was honored to be in the presence of his heroes who would even give him lessons when they had a chance. Valerius saw the dangers of being a gladiator first hand but he also saw the fame, glory, status and money it promised. When Valerius turned 17, he was formally accepted into the gladiator school for training.
+	</div>
+    </p>
+     <a id = "selector" class = "dark" href="../StyleMenu.html"><div class="button" id="lowerRight"> Select </div></a>
+    <a class = "dark" href="../FighterMenu.html"><div class="button" id="lowerLeft"> Back </div></a>
+  </body>
+</div>
+  <script>
+      $("#p2").hide();
+      $("#p3").hide();
+
+      $( "#p1" ).on("click",function() {
+        $("#p1").hide();
+        $("#p2").show();
+        $("#p3").hide();
+      });
+
+      $( "#p2" ).on("click",function() {
+        $("#p1").hide();
+        $("#p2").hide();
+        $("#p3").show();
+      });
+
+      $( "#selector" ).on("click",function() {
+        sessionStorage.fighter = "valerius";
+      });
+
+    </script>
+</html>

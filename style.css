@@ -1,0 +1,205 @@
+/* Backgrounds */
+
+.fullScreenDiv{
+	position:fixed;
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+	/*cursor : none;*/
+}
+
+body{
+	height:100%;
+	margin: 0;
+	
+	color: #000000;
+	font-family: "Circular Std";
+}
+
+#trajTitle{
+	
+	color:white;
+	font-family: "Trajan Pro 3";
+	font-size: 72px;
+}
+.Grey{
+	
+	 background-color: #C8D2D7;
+}
+
+.BlueDk{
+	height:100%;
+	
+	 background-color: #0000D9;
+}
+
+.BlueLt{
+	
+	 background-color: #00DCCD;
+}
+/* Links */
+a.light:link {
+	cursor: none;
+	color: white;
+    text-decoration: none;
+}
+
+a.light:visited {
+
+	color: white;
+    text-decoration: none;
+}
+
+a.light:hover {
+
+	color: gray;
+    text-decoration: none;
+}
+
+a.light:active {
+	
+	color: gray;
+    text-decoration: none;
+}
+
+a.dark:link {
+	cursor: none;
+	color: black;
+    text-decoration: none;
+}
+
+a.dark:visited {
+	
+	color: black;
+    text-decoration: none;
+}
+
+a.dark:hover {
+	
+	color: gray;
+    text-decoration: none;
+}
+
+a.dark:active {
+	
+	color: gray;
+    text-decoration: none;
+}
+/* Buttons */
+.button{
+	cursor: none;
+	position: absolute;
+	background-color: none;
+	border: 2px solid black;
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 50px;
+}
+.button:active{
+	
+	border:2px solid black; 
+}
+.button:focus{
+	
+	border:2px solid gray; 
+}
+.button:hover{
+	
+	border:2px solid gray; 
+}
+
+.buttonLt{
+	cursor: none;
+	position: absolute;
+	background-color: none;
+	border: 2px solid white;
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 50px;
+}
+.buttonLt:active{
+	
+	border:2px solid white; 
+}
+.buttonLt:focus{
+	
+	border:2px solid gray; 
+}
+.buttonLt:hover{
+	
+	border:2px solid gray; 
+}
+
+
+#lowerRight{	
+	position:absolute;
+    bottom:100px;
+    right:100px;
+}
+#lowerLeft{	
+	position:absolute;
+    bottom:100px;
+    left:100px;
+}
+
+.centered{
+	
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)	
+}
+
+.centeredHor{
+	
+	margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%)	
+}
+
+.fighterIcons{
+	cursor: none;
+	margin:20px;
+	width:300px;
+}
+
+.fighterIcons:active{
+	
+	width:290px;
+	border:5px solid gray; 
+}
+
+#padded{
+	
+	padding-left:150px;
+	padding-right:150px;
+	padding-bottom:150px;
+	font-size:30px;
+}
+
+.bottomText{
+	margin: 0;
+    position: absolute;
+    bottom: 33%;
+    left: 50%;
+    margin-right: -50%;
+    padding-left:150px;
+	padding-right:150px;
+    transform: translate(-50%, -50%)	
+}
+
+iframe{
+cursor: none;
+margin: 0;
+padding: 0;
+border: none;
+width: value;
+height: value;
+}

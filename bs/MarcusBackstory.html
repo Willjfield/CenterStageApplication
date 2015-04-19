@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marcus - Aristocrat</title>
+    <link type="text/css" rel="stylesheet" href="../style.css">
+    <script src="../scripts/jquery-2.1.3.min.js"></script>
+  </head>
+  <div class = "fullScreenDiv">
+  <body class = "Grey">
+	<p class="centeredHor" id="padded">
+	<div id = "p1" class = "bottomText">
+	Marcus grew up very comfortably. His father was a well respected aristocrat. His parents made it clear that his path in life was to follow in his father’s footsteps and work for the Roman state when he grew up. 
+	</div>
+	<div id = "p2" class = "bottomText">
+	When he turned 15, the Colosseum was completed. His parents abhorred gladiator fighting and forbade him from ever going to games. Marcus was embarrassed and enraged at his parents. His friends were allowed to go to the opening games at the Colosseum but he wasn't. Infuriated, he decided to sneak in. This experience changed the course of his life. He saw first hand, the fight between Verus and Priscus, which became immortalized in Martial’s poetry for millennia to follow.
+	</div>
+	<div id = "p3" class = "bottomText">
+	A few years later, despite his parents vehement objections, he joined the best gladiator school in Rome. Though his parents weren’t able to stop him, they pulled strings whenever possible to keep him away from the deadliest fighting. Frustrated, Marcus jumped at the opportunity to leave the city of Rome and tour the Empire where his parents held less sway. This could be his chance to prove himself as a warrior.<br>
+	</div>
+    </p>
+    <a id = "selector" class = "dark" href="../StyleMenu.html"><div class="button" id="lowerRight"> Select </div></a>
+    <a class = "dark" href="../FighterMenu.html"><div class="button" id="lowerLeft"> Back </div></a>
+  	</body>
+  </div>
+  	<script>
+      $("#p2").hide();
+      $("#p3").hide();
+
+      $( "#p1" ).on("click",function() {
+        $("#p1").hide();
+        $("#p2").show();
+        $("#p3").hide();
+      });
+
+      $( "#p2" ).on("click",function() {
+        $("#p1").hide();
+        $("#p2").hide();
+        $("#p3").show();
+      });
+
+      $( "#selector" ).on("click",function() {
+        sessionStorage.fighter = "marcus";
+      });
+
+    </script>
+</html>
