@@ -24,18 +24,19 @@ body{
 	font-size: 72px;
 }
 .Grey{
-	
 	 background-color: #C8D2D7;
+}
+
+.GreyDk{
+	 background-color: #444444;
 }
 
 .BlueDk{
 	height:100%;
-	
-	 background-color: #0000D9;
+	background-color: #0000D9;
 }
 
 .BlueLt{
-	
 	 background-color: #00DCCD;
 }
 /* Links */
