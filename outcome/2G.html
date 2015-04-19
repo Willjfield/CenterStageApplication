@@ -3,11 +3,18 @@
   <head>
     <title>Outcome Medium - Good</title>
     <link type="text/css" rel="stylesheet" href="../style.css">
+    <script src="../scripts/jquery-2.1.3.min.js"></script>
   </head>
   <div class = "fullScreenDiv">
   <body>
-    <h1 class = "centered">You Won!</h1>
-    Click <a href="../inv/InvitationColosseum.html">here to get your next invitation.</a>
+    <h1 class = "centered" id = "outcome"><div id="fighter"></div> Won!</h1>
+    <a class = "dark" href="../inv/InvitationColosseum.html"><div class="button" id="lowerCenter"> Continue </div></a>
   </body>
   </div>
+   <script type="text/javascript">
+  if(sessionStorage.fighter=="Marcus"){$("#fighter").replaceWith("Marcus");}
+  else if(sessionStorage.fighter=="Yonatan"){$("#fighter").replaceWith("Yonatan");}
+  else if(sessionStorage.fighter=="Flavia"){$("#fighter").replaceWith("Flavia");}
+  else if(sessionStorage.fighter=="Valerius"){$("#fighter").replaceWith("Valerius");}
+  </script>
 </html>

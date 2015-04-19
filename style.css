@@ -145,7 +145,13 @@ a.dark:active {
     bottom:100px;
     left:100px;
 }
-
+#lowerCenter{	
+	position:absolute;
+    bottom:50px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)	
+}
 .centered{
 	
 	margin: 0;
@@ -176,9 +182,14 @@ a.dark:active {
 	border:5px solid gray; 
 }
 
+#outcome{	
+	font-size: 60px;
+}
+
 .invIcons{
 	cursor: none;
-	margin:20px;
+	position: relative;
+	margin-top:300px;
 	width:700px;
 }
 
@@ -198,6 +209,17 @@ a.dark:active {
     left: 50%;
     padding:20px;
     transform: translate(-50%, -50%);
+}
+
+.topText{
+	color: #ffffff;
+	font-size:30px;
+	background-color: gray;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    padding:20px;
+    transform: translate(-50%, 50%);
 }
 
 .nextButton{
