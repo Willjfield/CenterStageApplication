@@ -4,14 +4,21 @@
     <title>Secutor</title>
     <link type="text/css" rel="stylesheet" href="../style.css">
   </head>
-  <body>
-    <h1>Secutor</h1>
-
-    The secutor ("pursuer") developed to fight the retiarius. As a variant of the murmillo, he wore the same armour and weapons, including the tall rectangular shield and the gladius. The helmet of the secutor, however, covered the entire face with the exception of two small eye-holes in order to protect his face from the thin prongs of the trident of his opponent. The helmet was also round and smooth so that the retiarius net could not get a grip on it.
-<br/>
-
-
-    Click <a href="../inv/InvitationSmall.html">here</a> to select.<br/>
-    Click <a href="../StyleMenu.html">here</a> to go back.
+    <div class = "fullScreenDiv">
+    <body class = "Grey">
+    <p class="centeredHor" id="padded">
+    <div id = "p1" class = "bottomText">
+    The <i>secutor</i> ("pursuer") developed to fight the retiarius. He carried the tall rectangular shield and the gladius. The helmet of the secutor covered the entire face with the exception of two small eye-holes in order to protect his face from the thin prongs of the trident of his opponent. The helmet was also round and smooth so that the retiarius net could not get a grip on it.
+    </p>
+    </div>
+    <br>
+    <a id = "selector" class = "dark" href="../inv/InvitationSmall.html"><div class="button" id="lowerRight"> Select </div></a>
+    <a class = "dark" href="../StyleMenu.html"><div class="button" id="lowerLeft"> Back </div></a>
   </body>
+  </div>
+    <script>
+      $( "#selector" ).on("click",function() {
+        sessionStorage.fstyle = "Sec";
+      });
+    </script>
 </html>
