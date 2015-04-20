@@ -12,4 +12,11 @@
     <script type="text/javascript">sessionStorage.testVar = "Test Var";</script>
   </body>
 </div>
+<script type="text/javascript">
+var gui = require('nw.gui');
+// Get the current window
+var win = gui.Window.get();
+// Create a new window and get it
+var vid_win = gui.Window.open('video.html');
+</script>
 </html>
