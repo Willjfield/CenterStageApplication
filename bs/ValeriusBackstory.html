@@ -8,6 +8,10 @@
   <div class = "fullScreenDiv">
   <body class = "Grey">
 	<p class="centeredHor" id="padded">
+    <br>
+    <img id = "ph1" width="800" src="../images/biophotos/val1.jpg"></a>
+    <img id = "ph2" width="800" src="../images/biophotos/val2.jpg"></a>
+    <img id = "ph3" width="800" src="../images/biophotos/val3.jpg"></a>
 	<div id = "p1" class = "bottomText">
 	Valerius didn't know much about his family but he knew that he was descended from a Germanic tribe called the Marcomanni. The Marcomanni lost to Julius Caeser's army in Gaul and were captured as slaves. That’s how Valerius’s parents told him they ended up in the Roman city of Nimes.
 	<br><br><img src ="../images/nextButton.png" class = "nextButton"> 
@@ -25,19 +29,25 @@
   </body>
 </div>
   <script>
-      $("#p2").hide();
+     $("#p2").hide();
       $("#p3").hide();
+      $("#ph2").hide();
+      $("#ph3").hide();
 
       $( "#p1" ).on("click",function() {
         $("#p1").hide();
+        $("#ph1").hide();
         $("#p2").show();
+        $("#ph2").show();
         $("#p3").hide();
       });
 
       $( "#p2" ).on("click",function() {
         $("#p1").hide();
         $("#p2").hide();
+        $("#ph2").hide();
         $("#p3").show();
+        $("#ph3").show();
       });
 
       $( "#selector" ).on("click",function() {
